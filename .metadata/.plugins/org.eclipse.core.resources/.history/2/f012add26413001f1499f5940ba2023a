@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<!-- 공통 화면 정의 -->
+	<definition name="baseLayout"  template="/WEB-INF/views/layout.jsp">  <!-- 기본 레이아웃 설정 -->
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />  <!-- 헤더  -->
+		<put-attribute name="index" value="/WEB-INF/views/index.jsp" /> <!-- 인덱스 경로 설정 -->
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" /> <!-- footer 경로 설정 -->
+	</definition>
+	
+	<!-- 인덱스 화면 정의 -->
+	<definition name="index" extends="baseLayout">
+      <put-attribute name="title" value="인덱스페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+   </definition>
+   
+</tiles-definitions>
+
+
