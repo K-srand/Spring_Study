@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<!-- 공통 화면 정의 -->
+	<definition name="baseLayout"  template="/WEB-INF/views/Nonage.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" /> 
+		<put-attribute name="index" value="/WEB-INF/views/index.jsp" /> 
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+   
+   <!-- 홈 화면 정의 -->
+	<definition name="Nonage" extends="baseLayout">
+      <put-attribute name="title" value="홈페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/Nonage.jsp" />
+   </definition>
+   
+   <!-- 회원목록 화면 정의 -->
+	<definition name="listMembers" extends="baseLayout">
+      <put-attribute name="title" value="회원목록페이지" />
+      <put-attribute name="body" value="/WEB-INF/views/listMembers.jsp" />
+   </definition>
+   
+   <!-- 로그인 화면 정의 -->
+	<definition name="member/loginForm" template="/WEB-INF/views/member/loginForm.jsp">
+      <put-attribute name="title" value="로그인페이지" />
+      <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+      <put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" />
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+   </definition>
+ 
+   
+</tiles-definitions>
+
+
