@@ -2,6 +2,8 @@
 <!DOCTYPE mapper
       PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+   <!-- member 테이블의 각 속성 값 등록 -->
 
 <mapper namespace="mapper.member">
 	<resultMap id="memResult" type="memberVO">
@@ -20,6 +22,15 @@
 	<select id="selectAllMemberList" resultMap="memResult">
       <![CDATA[
          select * from member 	
+      ]]>
+	</select>
+	
+	<!-- 회원 정보 출력 -->
+	<select id="selectMember" resultMap="memResult">
+      <![CDATA[
+         select * from member
+         where 
+         id=#{id, jdbcType=VARCHAR} 	
       ]]>
 	</select>
   

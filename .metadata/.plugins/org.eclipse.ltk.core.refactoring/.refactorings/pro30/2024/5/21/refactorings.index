@@ -40,3 +40,10 @@
 1716205842135	Delete element
 1716206763470	Rename resource 'login.jsp'
 1716209534058	Delete element
+1716290784266	Rename package 'com.myspring.pro30.nonage.controller'
+1716290809860	Rename package 'com.myspring.pro30.member.vo'
+1716290827990	Delete element
+1716290852147	Rename package 'com.myspring.pro30.member.controller'
+1716290873224	Rename package 'com.myspring.pro30.member.dao'
+1716290897884	Rename package 'com.myspring.pro30.member.interceptor'
+1716290910698	Rename package 'com.myspring.pro30.member.service'
