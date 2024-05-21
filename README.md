@@ -24,3 +24,15 @@
 - tiles/tiles_member.xml 로그인 화면 정의 추가
 3. [com.myspring.pro30.nonage.controller] 수정
 - NonageController.java에 로그인 화면, contract, 로그아웃, 장바구니 화면, 마이페이지, 1:1 고객 게시판 RequestMapping 추가
+
+## 2024-05-21
+1. 패키지 리팩토링
+- com.nonage.xxx로 모두 경로 수정
+- servlet-context.xml의 component-scan 컨텍스트 base-package 수정
+2. DB 연동
+- [webapp/spring] action.mybatis.xml에 빈 등록
+- [src/main/resources/mappers]에 쿼리문 등록 
+[com.nonage.member] 생성
+- service, dao, controller 구현
+3. 로그인 버튼 클릭 시 DB 연결
+- [webapp/views/member] loginForm.jsp action 경로 수정
