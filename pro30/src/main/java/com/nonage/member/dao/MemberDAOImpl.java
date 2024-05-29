@@ -16,13 +16,19 @@ public class MemberDAOImpl implements MemberDAO {
 	
 	// 회원 정보 출력
 	@Override
-	public List getMember(String id) throws DataAccessException {
+	public MemberVO getMember(MemberVO memberVO) throws DataAccessException {
 		
-		System.out.println("MemberDAO -> getMember(id) | id: " + id);
-		
-		List<MemberVO> member = null;
-		member = sqlSession.selectList("mapper.member.selectMember");  //mybatis member 설정의 selectMember 쿼리문 매핑
-		return member;
+		System.out.println("MemberDAO -> getMember(id) | id: " + memberVO.getId());
+		MemberVO vo = sqlSession.selectOne("mapper.member.login", memberVO); //mybatis member 설정의 login 쿼리문 매핑
+		return vo;  
 	}
+	
+	// 회원 가입
+		@Override
+		public int insertMember(MemberVO memberVO) throws DataAccessException {
+			System.out.println("MemberDAO -> getMember(id) | id: " + memberVO.getId());
+			//int result = sqlSession.insert("mapper.member.insertMember", memberVO);
+			return 0;
+		}
 
 }

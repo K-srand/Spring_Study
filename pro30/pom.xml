@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.myspring</groupId>
-	<artifactId>pro27</artifactId>
-	<name>pro27</name>
+	<groupId>com.nonage</groupId>
+	<artifactId>pro30</artifactId>
+	<name>pro30</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -158,6 +158,13 @@
 			<version>12.1.0.2.0</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ojdbc6.jar</systemPath>
+		</dependency>
+		
+		<!-- Beanutils 관련 라이브러리 -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.0</version>
 		</dependency>
 
 	</dependencies>

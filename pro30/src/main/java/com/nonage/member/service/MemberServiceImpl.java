@@ -20,11 +20,14 @@ public class MemberServiceImpl implements MemberService {
 
 //	회원 정보 출력
 	@Override
-	public List getMember(String id) throws DataAccessException {
-		List member = null;
-		member = memberDAO.getMember(id);           //memberDAO의 회원 정보 출력 메서드 호출
+	public MemberVO getMember(MemberVO memberVO) throws DataAccessException {
+		MemberVO member = memberDAO.getMember(memberVO);           //memberDAO의 회원 정보 출력 메서드 호출
 		return member;
 	}
 
-
+//	회원 가입
+	@Override
+	public int join(MemberVO member) throws DataAccessException {
+		return memberDAO.insertMember(member);
+	}
 }

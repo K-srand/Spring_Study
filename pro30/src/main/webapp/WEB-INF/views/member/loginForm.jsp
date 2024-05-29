@@ -17,7 +17,7 @@
 
   <article>
     <h1>Login</h1>
-    <form method="post" action="${contextPath}/member/login.do">
+    <form method="post" action="${contextPath}/member/login.do" name="loginForm">
         <fieldset>
         <legend></legend>
 	          <label>User ID</label>
@@ -27,9 +27,9 @@
         </fieldset>
         <div class="clear"></div>
         <div id="buttons">
-            <input type="submit" value="로그인" class="submit">
+            <input type="button" value="로그인" class="submit" onclick="isEmpty()">
             <input type="button" value="회원가입" class="cancel"
-                 onclick="location=''"> 
+                 onclick="location='${contextPath}/member/join_form.do'"> 
         </div>
     </form>  
   </article>

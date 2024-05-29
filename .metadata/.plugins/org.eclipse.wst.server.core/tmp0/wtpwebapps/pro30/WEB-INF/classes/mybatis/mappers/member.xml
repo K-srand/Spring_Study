@@ -26,13 +26,20 @@
 	</select>
 	
 	<!-- 회원 정보 출력 -->
-	<select id="selectMember" resultMap="memResult">
+	<select id="login" resultType="memberVO" parameterType="memberVO" >
       <![CDATA[
-         select * from member
-         where 
-         id=#{id, jdbcType=VARCHAR} 	
+         select * from member	
+		 where id=#{id} and pwd=#{pwd} 	
       ]]>
 	</select>
+	
+	<!-- 회원 가입 -->
+     <insert id="insertMember"  parameterType="memberVO">
+		<![CDATA[
+		 insert into member(id, pwd, name, email, zip_num, address, phone, useyn, indate)
+		 values(#{id}, #{pwd}, #{name}, #{email}, #{zip_num}, #{address}, #{phone}, #{useyn}, #{indate})
+		]]>      
+	</insert>
   
 </mapper>
 
