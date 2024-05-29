@@ -30,25 +30,6 @@ public class NonageController {
 		return mav;
 	}
 	
-	@RequestMapping(value="/member/loginForm.do" ,method = RequestMethod.GET)
-	public ModelAndView Login(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String viewName = (String)request.getAttribute("viewName");
-		ModelAndView mav = new ModelAndView(viewName);
-		return mav;
-	}
-	
-	@RequestMapping(value="/contract.do" ,method = RequestMethod.GET)
-	public ModelAndView Join(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		System.out.println("join!!!!!!!!!!!!!!!!!");
-		return null;
-	}
-	
-	@RequestMapping(value="/logout.do" ,method = RequestMethod.GET)
-	public ModelAndView Logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		System.out.println("logout!!!!!!!!!!!!!!!!!");
-		return null;
-	}
-	
 	@RequestMapping(value="/cart_list.do" ,method = RequestMethod.GET)
 	public ModelAndView cart(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		System.out.println("cart_list!!!!!!!!!!!!!!!!!");

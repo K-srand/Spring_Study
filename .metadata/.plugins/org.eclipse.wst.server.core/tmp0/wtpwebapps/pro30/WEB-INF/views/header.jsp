@@ -33,10 +33,10 @@
 	       <c:when test="${empty sessionScope.loginUser}">
 	       <li>         
 	         <a href="${contextPath}/member/loginForm.do" style="width:110px;">LOGIN(CUSTOMER</a>   
-		     <a href="NonageShop?command=admin_login_form" style="width:100px;">| ADMIN)</a>
+		     <a href="${contextPath}/member/admin_login_form.do" style="width:100px;">| ADMIN)</a>
 		   </li>		       
 	       <li>/</li>
-	       <li><a href="${contextPath}/contract.do">JOIN</a></li>
+	       <li><a href="${contextPath}/member/contract.do">JOIN</a></li>
 	       </c:when>
 	       <c:otherwise>
 	       <li style="color:orange">

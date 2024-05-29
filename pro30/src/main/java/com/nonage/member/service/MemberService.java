@@ -7,5 +7,6 @@ import org.springframework.dao.DataAccessException;
 import com.nonage.member.vo.MemberVO;
 
 public interface MemberService {
-	 public List getMember(String id) throws DataAccessException;  //회원정보 출력
+	 public MemberVO getMember(MemberVO memberVO) throws DataAccessException;  //회원정보 출력
+	 public int join(MemberVO memberVO) throws DataAccessException; //회원가입
 }

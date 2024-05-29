@@ -26,10 +26,32 @@
    </definition>
    
    <!-- 로그인 화면 정의 -->
-	<definition name="member/loginForm" template="/WEB-INF/views/member/loginForm.jsp">
+	<definition name="/member/loginForm" template="/WEB-INF/views/member/loginForm.jsp">
       <put-attribute name="title" value="로그인페이지" />
       <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
       <put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" />
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+   </definition>
+   
+   <!-- 로그인 실패 정의 -->
+	<definition name="/member/loginFail" template="/WEB-INF/views/member/login_fail.jsp">
+		<put-attribute name="title" value="로그인실패" />
+		<put-attribute name="body" value="/WEB-INF/views/member/login_fail.jsp" />
+   </definition>
+   
+   <!-- contract 정의 -->
+	<definition name="/member/contract" template="/WEB-INF/views/member/contract.jsp">
+      <put-attribute name="title" value="contract" />
+      <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+      <put-attribute name="body" value="/WEB-INF/views/member/contract.jsp" />
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+   </definition>
+   
+   <!-- join 정의 -->
+	<definition name="/member/join_form" template="/WEB-INF/views/member/join_form.jsp">
+      <put-attribute name="title" value="contract" />
+      <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+      <put-attribute name="body" value="/WEB-INF/views/member/join_form.jsp" />
       <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
    </definition>
  
