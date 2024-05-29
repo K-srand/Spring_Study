@@ -41,11 +41,17 @@
 
 1. 로그인 실패 시 예외처리
 1-1 [com.nonage.member.controller] MemberControllerImpl 회원정보가 DB에 등록되어있는지 체크
+
 1-2 아이디와 패스워드가 DB 정보와 불일치 할 경우 처리를 위한 login_fail.jsp를 추가 
+
 1-3 [src.main.resources.tiles] tiles_member.xml에 loginFail 추가
+
 1-4 [com.nonage.member.controller] MemberControllerImpl에서 ModelAndView로 리턴
+
 1-5 [src/main/webapp/WEB-INF/views/member] loginForm.jsp 아이디, 패스워드 입력 validation 체크를 위한 isEmpty() 함수를 onclick 이벤트로 호출 
+
 1-6 [src/main/webapp/resources/member] member.js 안에 isEmpty() 정의
+
 2. 로그아웃 구현
 2-1 [com.nonage.member.controller] MemberControllerImpl에 logout 추가 
 3. Contract 구현
