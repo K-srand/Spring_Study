@@ -61,4 +61,13 @@
 - [src/main/webapp/WEB-INF/views/member] join_form.jsp 회원가입 정보 입력란 예외처리를 위한 go_save() 호출
 - [src/main/webapp/resources/member] member.js에서 회원가입 입력란 예외처리를 위한 go_save() 구현
 
-
+## 2024-06-02
+1. Join 구현 완료
+1-1 [src/main/resources/mybatis/mappers] member.xml 회원가입을 위한 insert 쿼리문 추가
+1-2 [com.nonage.service] MemberService 회원 가입 service 추가
+1-3 [com.nonage.dao] MemberDAO 회원 가입 dao 추가
+1-4 [com.nonage.controller] MemberController 회원 가입 controller 추가
+1-5 spring 한글깨짐 방지 web.xml filter 설정
+2. 우편번호 API 적용 테스트
+2-1 [src/main/webapp/views/member] join_form.jsp 텍스트명 수정 및 placeholder 추가
+2-2 [src/main/webapp/resources/member] member.js post_zip() 함수 구현

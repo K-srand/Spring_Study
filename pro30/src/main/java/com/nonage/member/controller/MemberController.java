@@ -12,7 +12,7 @@ import com.nonage.member.vo.MemberVO;
 public interface MemberController {
 	public ModelAndView login(@ModelAttribute("memberVO") MemberVO member, 
 			HttpServletRequest request, HttpServletResponse response) throws Exception;  //로그인 생성
-	public ModelAndView join(@ModelAttribute("info") MemberVO member, 
-			HttpServletRequest request, HttpServletResponse response) throws Exception; //회원가입 생성
+	public ModelAndView join(@ModelAttribute("memberVO") MemberVO member, 
+			HttpServletRequest request, HttpServletResponse response) throws Exception; //회원정보 등록
 }
 

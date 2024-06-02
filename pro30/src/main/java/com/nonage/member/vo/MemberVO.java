@@ -17,8 +17,6 @@ public class MemberVO {
 		private String useyn;
 		private Timestamp indate;
 
-
-		
 		public String getId() {
 			return id;
 		}
