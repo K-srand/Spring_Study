@@ -112,9 +112,10 @@ public class MemberControllerImpl implements MemberController {
 		return mav;
 	}
 	
-	//회원 약관 기능 구현
+	//회원 정보 등록 기능 구현
 	@RequestMapping(value="/member/join.do" ,method = RequestMethod.POST)
-	public ModelAndView join(@ModelAttribute("info") MemberVO member, HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public ModelAndView join(@ModelAttribute("memberVO") MemberVO member, HttpServletRequest request, 
+			HttpServletResponse response) throws Exception {
 		ModelAndView mav = new ModelAndView();
 		
 		int result = 0;

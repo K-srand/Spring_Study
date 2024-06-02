@@ -13,7 +13,6 @@ import com.nonage.member.vo.MemberVO;
 
 
 @Service("memberService")
-@Transactional(propagation = Propagation.REQUIRED)
 public class MemberServiceImpl implements MemberService {
 	@Autowired
 	private MemberDAO memberDAO;
@@ -25,9 +24,9 @@ public class MemberServiceImpl implements MemberService {
 		return member;
 	}
 
-//	회원 가입
+//	회원 정보 등록
 	@Override
 	public int join(MemberVO member) throws DataAccessException {
-		return memberDAO.insertMember(member);
+		return memberDAO.insertMember(member);       //memberDAO의 회원 정보 등록 메서드 호출
 	}
 }

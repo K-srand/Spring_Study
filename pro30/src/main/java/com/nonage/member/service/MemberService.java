@@ -8,5 +8,5 @@ import com.nonage.member.vo.MemberVO;
 
 public interface MemberService {
 	 public MemberVO getMember(MemberVO memberVO) throws DataAccessException;  //회원정보 출력
-	 public int join(MemberVO memberVO) throws DataAccessException; //회원가입
+	 public int join(MemberVO memberVO) throws DataAccessException; //회원 정보 등록
 }

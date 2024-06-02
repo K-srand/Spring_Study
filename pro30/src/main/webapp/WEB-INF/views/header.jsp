@@ -12,7 +12,8 @@
   <title>Nonage Shop</title>
 	  <link href="${contextPath}/resources/css/shopping.css" rel="stylesheet">  
 	  <script type="text/javascript" src="${contextPath}/resources/member/member.js"></script>
-	  <script type="text/javascript" src="${contextPath}/resources/mypage/mypage.js"></script> 
+	  <script type="text/javascript" src="${contextPath}/resources/mypage/mypage.js"></script>
+	  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> <!-- daum 우편번호 서비스 -->
 </head>
 
   <body>
