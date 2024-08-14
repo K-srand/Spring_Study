@@ -1,4 +1,5 @@
 # Server Side release
+- pro30을 참고해주세요.
 
 ## 2024-05-17
 - CRUD 구현 테스트
